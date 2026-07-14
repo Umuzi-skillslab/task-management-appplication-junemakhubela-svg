@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1>Task Management System</h1>
+    </header>
+
+    <section class="add-task-section" aria-labelledby="add-task-heading">
+      <h2 id="add-task-heading">Add New Task</h2>
+
+      <form id="task-form" class="task-form" novalidate>
+        <div class="form-field">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="Task title" required>
+        </div>
+
+        <div class="form-field">
+          <label for="description">Description</label>
+          <input type="text" id="description" name="description" placeholder="Description">
+        </div>
+
+        <div class="form-field">
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority">
+            <option value="1">1 - Lowest</option>
+            <option value="2">2 - Low</option>
+            <option value="3" selected>3 - Medium</option>
+            <option value="4">4 - High</option>
+            <option value="5">5 - Highest</option>
+          </select>
+        </div>
+
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+
+        <button type="submit" class="add-task-btn">Add Task</button>
+      </form>
+    </section>
+
+    <section class="task-filters" aria-label="Filter tasks">
+      <button type="button" class="filter-btn" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="active">Active</button>
+      <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+    </section>
+
+    <section class="task-list" id="task-list" aria-live="polite">
+      <!-- Tasks are rendered here by dom.js -->
+    </section>
+
+    <section class="statistics" id="statistics" aria-label="Task statistics">
+      <!-- Statistics are rendered here by dom.js -->
+    </section>
+  </div>
+
+  <!-- Single ES6 module entry point. dom.js imports app.js, storage.js, and
+       utils.js, so only one script tag is needed and the load order is no
+       longer a concern (the browser resolves the module graph itself). -->
+  <script type="module" src="src/dom.js"></script>
+</body>
+
+</html>
