@@ -138,3 +138,44 @@ id and always returned `true`. It only surfaced once a test asserted
 other tasks' ids stayed unchanged. `countCompletedTasks` was similar: it
 looked fine until exercised with a real finite array, where it blew the
 call stack — exactly what a base-case/edge-case test is for.
+
+## Screenshots
+
+### App before debugging and implementing fixes:
+
+<div align="center"> <img src="./task-manager/screenshots/app-before.png" alt="Image showing the app before debugging and fixes" width="900" height="700"> </div>
+
+
+### App for mobile devices after fixes:
+
+<div align="center"> <img src="./task-manager/screenshots/app-mobile.png" alt="Image showing the app for mobile devices after fixes" width="300" height="600"> </div>
+
+
+### App running after fixes:
+
+<div align="center"> <img src="./task-manager/screenshots/app-running.png" alt="Image showing the app running after fixes" width="900" height="700"> </div>
+
+
+### Console showing an error before debugging and fixing:
+
+<div align="center"> <img src="./task-manager/screenshots/console-with-errors(before).png" alt="Image showing console errors caught on the app before fixes" width="900" height="700"> </div>
+
+
+### Console showing no errors after implementing fixes:
+
+<div align="center"> <img src="./task-manager/screenshots/console-no-errors.png" alt="Image showing the console without errors" width="900" height="700"> </div>
+
+
+### Tests failing before fixing:
+
+<div align="center"> <img src="./task-manager/screenshots/tests-failing(before).png" alt="Image showing failing tests" width="900" height="700"> </div>
+
+
+### Tests passing after fixing:
+
+<div align="center"> <img src="./task-manager/screenshots/tests-passing(1).png" alt="Image showing passing tests" width="900" height="700"> </div>
+
+
+### More tests passing after fixing:
+
+<div align="center"> <img src="./task-manager/screenshots/tests-passing(2).png" alt="Another image showing passing tests" width="900" height="700"> </div>
