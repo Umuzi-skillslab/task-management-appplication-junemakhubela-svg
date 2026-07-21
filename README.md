@@ -127,7 +127,7 @@ npm test
 ```
 
 Result: `Test Suites: 1 passed, 1 total` · `Tests: 33 passed, 33 total`.
-See `screenshots/` for images of the app running, the console (with no errors), and the
+See `screenshots folder` or `screenshots section` below the for images of the app running, the console (with no errors), and the
 passing Jest output.
 
 ## Reflection
